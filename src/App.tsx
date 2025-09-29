@@ -7,6 +7,7 @@ const App: React.FC = () => {
 
   const handleAddition = () => setResult(value1 + value2);
   const handleSubtraction = () => setResult(value1 - value2);
+  const handleMultiplication = () => setResult(value1 * value2); // Added multiplication
 
   return (
     <div style={{ maxWidth: 300, margin: '50px auto', padding: 20, border: '1px solid #ccc', borderRadius: 8 }}>
@@ -27,7 +28,8 @@ const App: React.FC = () => {
       />
       <div>
         <button onClick={handleAddition} style={{ marginRight: 10 }}>Add</button>
-        <button onClick={handleSubtraction}>Subtract</button>
+        <button onClick={handleSubtraction} style={{ marginRight: 10 }}>Subtract</button>
+        <button onClick={handleMultiplication}>Multiply</button>
       </div>
       <div style={{ marginTop: 20 }}>
         {result !== null && <h3>Result: {result}</h3>}
