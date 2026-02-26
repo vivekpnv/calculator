@@ -11,7 +11,7 @@ const App: React.FC = () => {
 
   return (
     <div style={{ maxWidth: 300, margin: '50px auto', padding: 20, border: '1px solid #ccc', borderRadius: 8 }}>
-      <h2>Simple Calculator</h2>
+      <h2>Simple Calculator with designs</h2>
       <input
         type="number"
         value={value1}
